@@ -34,28 +34,28 @@ public:
     void initializeBoard() {
         // Расстановка пешек
         for (int i = 0; i < figure::BOARD_SIZE; ++i) {
-            board[1][i] = new figure::Pawn(figure::Color::WHITE);
-            board[6][i] = new figure::Pawn(figure::Color::BLACK);
+            board[6][i] = new figure::Pawn(figure::Color::WHITE);
+            board[1][i] = new figure::Pawn(figure::Color::BLACK);
         }
 
         // Расстановка остальных фигур
-        board[0][0] = new figure::Rook(figure::Color::WHITE);
-        board[0][7] = new figure::Rook(figure::Color::WHITE);
-        board[0][1] = new figure::Knight(figure::Color::WHITE);
-        board[0][6] = new figure::Knight(figure::Color::WHITE);
-        board[0][2] = new figure::Bishop(figure::Color::WHITE);
-        board[0][5] = new figure::Bishop(figure::Color::WHITE);
-        board[0][3] = new figure::Queen(figure::Color::WHITE);
-        board[0][4] = new figure::King(figure::Color::WHITE);
+        board[7][0] = new figure::Rook(figure::Color::WHITE);
+        board[7][7] = new figure::Rook(figure::Color::WHITE);
+        board[7][1] = new figure::Knight(figure::Color::WHITE);
+        board[7][6] = new figure::Knight(figure::Color::WHITE);
+        board[7][2] = new figure::Bishop(figure::Color::WHITE);
+        board[7][5] = new figure::Bishop(figure::Color::WHITE);
+        board[7][3] = new figure::Queen(figure::Color::WHITE);
+        board[7][4] = new figure::King(figure::Color::WHITE);
 
-        board[7][3] = new figure::Queen(figure::Color::BLACK);
-        board[7][4] = new figure::King(figure::Color::BLACK);
-        board[7][2] = new figure::Bishop(figure::Color::BLACK);
-        board[7][5] = new figure::Bishop(figure::Color::BLACK);
-        board[7][1] = new figure::Knight(figure::Color::BLACK);
-        board[7][6] = new figure::Knight(figure::Color::BLACK);
-        board[7][0] = new figure::Rook(figure::Color::BLACK);
-        board[7][7] = new figure::Rook(figure::Color::BLACK);
+        board[0][3] = new figure::Queen(figure::Color::BLACK);
+        board[0][4] = new figure::King(figure::Color::BLACK);
+        board[0][2] = new figure::Bishop(figure::Color::BLACK);
+        board[0][5] = new figure::Bishop(figure::Color::BLACK);
+        board[0][1] = new figure::Knight(figure::Color::BLACK);
+        board[0][6] = new figure::Knight(figure::Color::BLACK);
+        board[0][0] = new figure::Rook(figure::Color::BLACK);
+        board[0][7] = new figure::Rook(figure::Color::BLACK);
 
         // Аналогично для других фигур...
     }
